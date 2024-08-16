@@ -76,7 +76,7 @@ header {
 
 button {
   padding: 9px 25px;
-  /* background-color: #a10404; */
+  /* background-color: var(--secondry-color); */
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -141,6 +141,7 @@ nav ul li a {
     text-decoration: none;
     transition: color 0.3s ease;
     padding: 0px 10px; */
+  color: var(--primary-color);
 }
 
 nav ul li a:hover {
@@ -164,6 +165,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center; */
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 
@@ -219,7 +226,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(245, 245, 245);
   text-align: center;
   z-index: 10;
   font-size: 3rem;
@@ -246,7 +253,7 @@ main {
   justify-items: center;
   justify-content: center;
   align-content: center;
-  /* color: white; */
+  /* color: black; */
   /* -webkit-text-stroke: px rgb(110, 110, 110); */
   position: relative;
   font-size: 20px;
@@ -264,7 +271,7 @@ main {
 .main-text:hover {
   color: rgb(255, 255, 255);
   font-weight: 1000;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.432);
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 3px 7px #000;
@@ -789,7 +796,7 @@ nav ul li a {
 .videoContainer {
   position: relative;
   /* overflow: hidden; */
-  
+
 }
 
 .videoSize {
@@ -802,7 +809,7 @@ nav ul li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
+  color: var(--primary-color);
   text-align: center;
   z-index: 10;
   /* font-size: 3rem; */
@@ -813,6 +820,7 @@ nav ul li a {
 
 .main-text {
   padding: 20px;
+  color: var(--primary-color);
   /* margin: 0; */
 }
 
@@ -820,6 +828,7 @@ nav ul li a {
 .main-text p,
 .main-text h3 {
   margin: 10px 0;
+  color: var(--primary-color); 
 }
 
 /* Responsive Design */
@@ -1062,7 +1071,7 @@ nav ul li a {
   }
 }
 
-.foot-h{
+.foot-h {
   display: flex;
 }
 
@@ -1081,21 +1090,21 @@ nav ul li a {
     flex-wrap: nowrap;
     align-content: center;
     align-items: stretch;
-}
+  }
 }
 
 /* for animated text */
-.animated-text{
+.animated-text {
   position: relative;
   font-size: 5vw;
   color: #25283900;
-  -webkit-text-stroke: 0.2vw ;
+  -webkit-text-stroke: 0.2vw;
 }
 
-.animated-text::before{
+.animated-text::before {
   content: attr(data-text);
   position: absolute;
-  color: #f8f8f8;
+  color: rgb(255, 255, 255);
   top: 0;
   left: 0;
   width: 20%;
@@ -1106,12 +1115,47 @@ nav ul li a {
   animation: animates 6s linear infinite;
 }
 
-@keyframes animates{
-  0%,10%,100%{
+@keyframes animates {
+
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  70%,90%{
+
+  70%,
+  90% {
     width: 100%;
   }
 }
+
 /**/
+
+/* for dark or light theme */
+#ICON {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Light theme */
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+/* Ensure that the color of the text inside .video_text and .On-video-text is also handled */
+.light-theme .animated-text::before {
+  color: black;
+}
+
+
+.dark-theme .animated-text::before {
+  color: white;
+}

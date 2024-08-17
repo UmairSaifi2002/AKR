@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // Change the icon back to sun for light mode
         icon.src = "moon.png"; 
-        logo.src = "The AKR Letter  Black PNG.png";
+        logo.src = "The AKR Letter Black PNG.png";
         // c.style.backgroundColor = '#22222275'
         n.forEach(e => {
           e.style.color = "black";

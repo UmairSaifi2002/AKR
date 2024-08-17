@@ -337,3 +337,17 @@ button:hover {
         width: 100%; /* Full width on small screens */
     }
 }
+
+
+/* for light and dark theme */
+/* Light theme */
+.light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark theme */
+  .dark-theme {
+    background-color: black;
+    color: white;
+  }

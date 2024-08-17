@@ -17,23 +17,28 @@
 
 <body>
 
-    <video autoplay muted loop id="myVideo">
-        <source src="/videoplayback.mp4" type="video/mp4">
+    <video autoplay muted loop id="myVideo" class="video-bg-back">
+        <source src="/dark-theme-video.mp4" type="video/mp4">
     </video>
 
-    <header class="navbar">
+    <header class="navbar light-themes">
         <img class="logo" src="The AKR Letter White PNG.png" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html" target="_blank">Main</a></li>
-                <!-- <li><a href="#main" >Overview</a></li> -->
-                <li><a href="About_us.html" target="_blank">About Us</a></li>
-            </ul>
-        </nav>
+        <div >
+            <nav style="display: flex;">
+                <ul class="nav_links">
+                    <li><a class="colora" href="index.html" >Main</a></li>
+                    <!-- <li><a href="#main" >Overview</a></li> -->
+                    <li><a class="colora" href="About_us.html" >About Us</a></li>
+                </ul>
+                <img src="sun.png" alt="sun image" id="ICON" style="width: 30px;
+                height: 30px;
+                margin-left: 30px; cursor: pointer;">
+            </nav>
+        </div>
         <!-- <a class="cta" href="#Contact_Us" id="contact-link"><button>Contact</button></a> -->
     </header>
 
-    <div class="content content1 content2 content3 content4">
+    <div class="content content1 content2 content3 content4 light-themes">
         <h1 class="reveal" class="heading">Team</h1>
         <div class="main reveal vertical">
             <div class="first">
@@ -41,36 +46,36 @@
                     <img src="augatine paul.jpg" alt="CEO_and_CTO">
                 </div>
                 <button class="button-19" class="button" onclick="showText('text1')">Contact</button>
-                <p id="text1" class="text">augustine@theakrcompany.com</p>
-                <h2 class="designation">CEO</h2>
-                <p class="name">Augustine paul</p>
+                <p id="text1" class="text colora">augustine@theakrcompany.com</p>
+                <h2 class="designation colora">CEO</h2>
+                <p class="name colora">Augustine paul</p>
             </div>
             <div class="first">
                 <div class="image">
                     <img src="Kundan Kumar.jpg" alt="CFO">
                 </div>
                 <button class="button-19" class="button" onclick="showText('text2')">Contact</button>
-                <p id="text2" class="text">kundan@theakrcompany.com</p>
-                <h2 class="designation">CFO</h2>
-                <p class="name">Kundan Kumar</p>
+                <p id="text2" class="text colora">kundan@theakrcompany.com</p>
+                <h2 class="designation colora">CFO</h2>
+                <p class="name colora">Kundan Kumar</p>
             </div>
             <div class="first">
                 <div class="image">
                     <img src="neeraj_photo.jpeg" alt="COO">
                 </div>
                 <button class="button-19" class="button" onclick="showText('text3')">Contact</button>
-                <p id="text3" class="text">nirajanand@theakrcompany.com</p>
-                <h2 class="designation">COO</h2>
-                <p class="name">Neeraj Aanand</p>
+                <p id="text3" class="text colora">nirajanand@theakrcompany.com</p>
+                <h2 class="designation colora">COO</h2>
+                <p class="name colora">Neeraj Aanand</p>
             </div>
             <div class="first">
                 <div class="image">
                     <img src="Manu Mahalay.jpg" alt="CSO">
                 </div>
                 <button class="button-19" class="button" onclick="showText('text4')">Contact</button>
-                <p id="text4" class="text">manumahalay@theakrcompany.com</p>
-                <h2 class="designation">CSO</h2>
-                <p class="name">Manu Mahalay</p>
+                <p id="text4" class="text colora">manumahalay@theakrcompany.com</p>
+                <h2 class="designation colora">CSO</h2>
+                <p class="name colora">Manu Mahalay</p>
             </div>
             <!-- <div class="first">
                 <div class="image">
@@ -82,15 +87,15 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer light-themes">
         <div class="Foot-container">
           <div class="Foot-row">
             <div class="footer-col">
               <h4 class="foot-h">company</h4>
               <ul list-style-type="none" class="Foot-ul">
-                <li><a href="#">about us</a></li>
-                <li><a href="#">our services</a></li>
-                <li><a href="#">privacy policy</a></li>
+                <li><a class="colora" href="#">about us</a></li>
+                <li><a class="colora" href="#">our services</a></li>
+                <li><a class="colora" href="#">privacy policy</a></li>
                 <!-- <li><a href="#">affiliate program</a></li> -->
               </ul>
             </div>

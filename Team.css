@@ -35,7 +35,7 @@ body{
     /* height: 100vh; */
 }
 
-img{
+.img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -206,3 +206,17 @@ header{
         width: 100%;
     }
 } 
+
+/* for dark and light theme */
+.naav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.ICON{
+    width: 30px;
+    height: 30px;
+}
